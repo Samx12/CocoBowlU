@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🥥 COCOBOWL </title>
+    <link rel="stylesheet" href="css/global.css">
+</head>
+
+<body>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logoo.png" alt="Logo de la empresa">
+              </div>
+            <ul class="nav-links">
+                <div>
+                    <a id="Home" href="index.html" onclick="slider()">Inicio </a>
+                </div>
+                <div>
+                    <a id="About" href="productos.html" >Nuestros Productos</a>
+                </div>
+            </ul>
+            <div>
+                <a id="Contact" href="about.html">Nosotros</a>
+            </div>
+            <div>
+                <img src="images/carrito1.png" onclick="" href="users.html">
+            </div>
+            <div>
+                <img src="images/user.png" onclick="ROUTER.load('users')"">
+            </div>
+
+            <div class="search-bar">
+              <input type="text" id="searchInput" placeholder="Buscar...">
+              <button id="searchButton">Buscar</button>
+            </div>
+          </nav>
+    
+
+    <div id="content">
+
+
+        <div class="grid-container">
+            <div class="grid-container">
+                <div class="grid-container">
+                    <div class="card1">
+                      <img src="/images/prototipo2.png" class="card-img-top" alt="...">
+
+                      <div class="modal-overlay" id="modal1Overlay" onclick="closeModal('modal1')"></div>
+
+                      <div class="modal" id="modal1">
+                      <h2>Contenido Adicional</h2>
+                      <p>Aquí puedes agregar más detalles sobre el tazón pequeño.</p>
+                      <button class="btn btn-secondary" onclick="closeModal('modal1')">Cerrar</button>
+                      </div>
+                      <div class="card-body">
+                        <h1 class="card-title">Tazón Pequeño</h1>
+                        <a class="btn btn-primary" onclick="openModal('modal1')">Ver más</a>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                      </div>
+                    </div>
+                  </div>   
+            </div>
+            <div class="card2">
+                <img src="/images/prototipo2.png" class="card-img-top" alt="...">
+                <div class="modal-overlay" id="modal2Overlay" onclick="closeModal('modal2')"></div>
+
+                      <div class="modal" id="modal2">
+                      <h2>Contenido Adicional</h2>
+                      <p>Aquí puedes agregar más detalles sobre el tazón pequeño.</p>
+                      <button class="btn btn-secondary" onclick="closeModal('modal2')">Cerrar</button>
+                      </div>
+                <div class="card-body">
+                  <h1 class="card-title">Tazón mediano</h1>
+                  <a class="btn btn-primary" onclick="openModal('modal2')">Ver más</a>
+
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card3">
+                <img src="images/prototipo3.png" class="card-img-top" alt="...">
+                <div class="modal-overlay" id="modal3Overlay" onclick="closeModal('modal3')"></div>
+
+                      <div class="modal" id="modal3">
+                      <h2>Contenido Adicional</h2>
+                      <p>Aquí puedes agregar más detalles sobre el tazón pequeño.</p>
+                      <button class="btn btn-secondary" onclick="closeModal('modal3')">Cerrar</button>
+                      </div>
+                <div class="card-body">
+                  <h1 class="card-title">Tazon Grande</h1>
+                  <a class="btn btn-primary" onclick="openModal('modal3')">Ver más</a>
+
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card4">
+                <img src="images/prototipo3.png" class="card-img-top" alt="...">
+                <div class="modal-overlay" id="modal4Overlay" onclick="closeModal('modal4')"></div>
+
+                      <div class="modal" id="modal4">
+                      <h2>Contenido Adicional</h2>
+                      <p>Aquí puedes agregar más detalles sobre el tazón pequeño.</p>
+                      <button class="btn btn-secondary" onclick="closeModal('modal4')">Cerrar</button>
+                      </div>
+                <div class="card-body">
+                  <h1 class="card-title">Tazon Grande</h1>
+                  <button class="btn btn-primary" onclick="openModal('modal4')">Ver más</button>
+
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card5">
+                <img src="images/prototipo3.png" class="card-img-top" alt="...">
+                <div class="modal-overlay" id="modal5Overlay" onclick="closeModal('modal5')"></div>
+
+                      <div class="modal" id="modal5">
+                      <h2>Contenido Adicional</h2>
+                      <p>Aquí puedes agregar más detalles sobre el tazón pequeño.</p>
+                      <button class="btn btn-secondary" onclick="closeModal('modal5')">Cerrar</button>
+                      </div>
+                <div class="card-body">
+                  <h1 class="card-title">Tazon Grande</h1>
+                  
+                  <a class="btn btn-primary" onclick="openModal('modal5')">Ver más</a>
+
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card6">
+                <img src="images/prototipo3.png" class="card-img-top" alt="...">
+                <div class="modal-overlay" id="modal6Overlay" onclick="closeModal('modal6')"></div>
+
+                <div class="modal" id="modal6">
+                <h2>Contenido Adicional</h2>
+                <p>Aquí puedes agregar más detalles sobre el tazón pequeño.</p>
+                <button class="btn btn-secondary" onclick="closeModal('modal6')">Cerrar</button>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title">Tazon Grande</h1>
+                  <button class="btn btn-primary" onclick="openModal('modal6')">Ver más</button>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+
+
+    </div>
+
+                <!-- Modal 1 -->
+            <div class="modal-overlay" id="modal1Overlay" onclick="closeModal('modal1')"></div>
+
+            <div class="modal" id="modal1">
+            <h2>Contenido Adicional</h2>
+            <p>Aquí puedes agregar más detalles sobre el tazón pequeño.</p>
+            <button class="btn btn-secondary" onclick="closeModal('modal1')">Cerrar</button>
+            </div>
+
+
+    <script src="./js/router.js"></script>
+    <script src="./js/routes.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/sliderout.js"></script>
+    <script src="./js/modal.js"></script>
+
+</body>
+
+</html>
